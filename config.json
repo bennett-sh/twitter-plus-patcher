@@ -1,0 +1,23 @@
+{
+  "appName": "Twitter+",
+  "appVersion": {
+    "code": "29562001",
+    "name": null
+  },
+  "appIcon": {
+    "foreground": null,
+    "background": "@mipmap/ic_seasonal_euro_background",
+    "monochrome": "@mipmap/ic_launcher_twitter_foreground"
+  },
+  "packageName": null,
+  "materialYou": true,
+  "removeTranslations": true,
+  "keystore": {
+    "path": "keystore.jks",
+    "password": "dvrk2zstzvK8G-EqvBT4VXeg59oP0w-OvORX7Rbl8jeyTy3QAlm2XmqVhQ3u",
+    "keyAlias": "twitterplus"
+  },
+  "patches": [
+    
+  ]
+}

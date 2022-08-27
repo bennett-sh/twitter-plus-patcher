@@ -1,0 +1,37 @@
+{
+  "name": "twitter-plus-patcher",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "bin": "dist/main.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "prepare": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      "assets/**/*"
+    ],
+    "options": [
+      "experimental-modules"
+    ],
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "outputPath": "build"
+  },
+  "devDependencies": {
+    "@types/cli-color": "^2.0.2",
+    "@types/node": "^18.7.13"
+  },
+  "dependencies": {
+    "cli-color": "^2.0.3",
+    "dotenv": "^16.0.1"
+  }
+}
