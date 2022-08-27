@@ -1,0 +1,22 @@
+{
+  "appName": "Twitter+",
+  "appVersion": {
+    "code": null,
+    "name": null
+  },
+  "appIcon": {
+    "foreground": null,
+    "background": null,
+    "monochrome": "@mipmap/ic_launcher_twitter_foreground"
+  },
+  "packageName": null,
+  "removeTranslations": false,
+  "keystore": {
+    "path": "keystore.jks",
+    "password": "password",
+    "keyAlias": "twitterplus"
+  },
+  "patches": {
+    "material-you": true
+  }
+}
