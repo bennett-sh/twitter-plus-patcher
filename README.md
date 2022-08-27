@@ -1,5 +1,8 @@
 # Twitter Plus Patcher
 ### This program patches multiple modifications (like Material You or Android 13 dynamic icons) into a Twitter APK
+<br/>
+
+## ***DISCLAIMER: This project is NOT made by/associated with Twitter Inc.***
 
 <br />
 
