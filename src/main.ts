@@ -82,9 +82,9 @@ async function main() {
 
 
   const apk = path.resolve(process.argv[2])
-  const unsignedOutputApk = stripExtension(path.resolve(apk)) + '-unsigned-patched.apk'
-  const zipAlignedOutputApk = stripExtension(path.resolve(apk)) + '-zipaligned-patched.apk'
-  const outputApk = stripExtension(path.resolve(apk)) + '-patched.apk'
+  const unsignedOutputApk = stripExtension(path.resolve(apk)) + '-plus-unsigned.apk'
+  const zipAlignedOutputApk = stripExtension(path.resolve(apk)) + '-plus-zipaligned.apk'
+  const outputApk = stripExtension(path.resolve(apk)) + '-plus.apk'
 
 
   printInfo({
