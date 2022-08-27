@@ -67,23 +67,15 @@ export default async function patch(dir: string, config: PatchConfig) {
     await writeFile(strings, stringsFile)
   }
 
-  // Material You
-  if(config.materialYou === true) {
-    log('Applying Material You patch...')
-
-    if(existsSync(path.join(res, 'values-v31', 'colors.xml'))) {
-      console.warn(color.yellowBright('WARNING: File for Material You patch already exists (might break the app). Please open a GitHub issue.'))
-    }
-
-    await cp(materialYouPatch, res, { recursive: true })
-  }
-
   // Custom patches
   if(config.patches) {
     for(let i = 0; i < config.patches.length; i++) {
       log(`Applying custom patch [${i}/${config.patches.length}]...`)
 
-      let patch = config.patches[i]
+      let patch = Object.keys(config.patches)[i]
+      let patchEnabled = config.patches[i]
+
+      if(!patchEnabled) continue
 
       await cp(path.join('patches', patch), path.resolve(dir), { recursive: true })
     }

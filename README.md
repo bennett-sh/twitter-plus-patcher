@@ -28,10 +28,9 @@
 | appVersion         	| The app version                                                                                                                   	| Object(name?: string; code?: string)                                   	|
 | appIcon            	| An object containing info about the app icon (if a property is not set, it won't override the icon)                                	| Object(foreground?: string, background?: string, monochrome?: string) 	|
 | packageName        	| The name of the app package                                                                                                        	| string                                                                	|
-| materialYou        	| Whether or not the app should use Material You colors                                                                              	| boolean                                                               	|
 | removeTranslations 	| Whether or not translations should be removed (if translations are kept, some patches may not work in some languages)              	| boolean                                                               	|
 | keystore           	| An object containing information about a keystore                                                                                  	| Object(path: string, password: string, keyAlias: string)              	|
-| patches            	| A list of custom patches. Each patch must be a folder inside /patches. Each patch will be copied into the decompiled apk directory 	| Array<String>                                                         	|
+| patches            	| A list of custom patches. Each patch must be a folder inside /patches. Each patch will be copied into the decompiled apk directory 	| Object([patchname]: boolean)                                                         	|
 
 ## Creating a keystore
 Run ```keytool -genkeypair -v -keystore keystore.jks -alias twitterplus -keyalg RSA -sigalg SHA256withRSA -keysize 2048 -validity 10000```

@@ -4,7 +4,6 @@ dist/
 package-lock.json
 
 patch.config.json
-patches/
 
 *.jks
 
