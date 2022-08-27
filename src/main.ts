@@ -92,7 +92,8 @@ async function main() {
     'Node Version': process.version,
     'APKTool Version': 'v' + await getApkToolVersion(),
     'APK': apk,
-    'Decompilation Folder': DECOMPILE_FOLDER
+    'Decompilation Folder': DECOMPILE_FOLDER,
+    'Dev Mode': isDev
   })
 
 

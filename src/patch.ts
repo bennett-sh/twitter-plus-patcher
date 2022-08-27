@@ -67,10 +67,10 @@ export default async function patch(dir: string, config: PatchConfig) {
     await writeFile(strings, stringsFile)
   }
 
-  // Custom patches
-  if(config.patches) {
-    for(let i = 0; i < config.patches.length; i++) {
-      log(`Applying custom patch [${i}/${config.patches.length}]...`)
+  // Other patches
+  if(config.patches != null) {
+    for(let i = 0; i < Object.keys(config.patches).length; i++) {
+      log(`Applying patch [${i + 1}/${Object.keys(config.patches).length}]...`)
 
       let patch = Object.keys(config.patches)[i]
       let patchEnabled = config.patches[i]
