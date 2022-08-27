@@ -9,3 +9,5 @@ patches/
 *.jks
 
 _decompiled/
+
+config.json

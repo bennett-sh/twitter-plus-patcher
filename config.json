@@ -14,7 +14,7 @@
   "removeTranslations": false,
   "keystore": {
     "path": "keystore.jks",
-    "password": "dvrk2zstzvK8G-EqvBT4VXeg59oP0w-OvORX7Rbl8jeyTy3QAlm2XmqVhQ3u",
+    "password": "BnkPUEPweTEU88tX9Ytdyc4xTWDONDlJTIXXlTTmtnjsRl1o9zgI5futLFpu",
     "keyAlias": "twitterplus"
   },
   "patches": [
