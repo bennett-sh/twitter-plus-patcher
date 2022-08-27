@@ -10,14 +10,13 @@
     "monochrome": "@mipmap/ic_launcher_twitter_foreground"
   },
   "packageName": null,
-  "materialYou": true,
   "removeTranslations": false,
   "keystore": {
     "path": "keystore.jks",
     "password": "password",
     "keyAlias": "twitterplus"
   },
-  "patches": [
-    
-  ]
+  "patches": {
+    "material-you": true
+  }
 }
