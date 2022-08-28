@@ -73,7 +73,7 @@ export default async function patch(dir: string, config: PatchConfig) {
       log(`Applying patch [${i + 1}/${Object.keys(config.patches).length}]...`)
 
       let patch = Object.keys(config.patches)[i]
-      let patchEnabled = config.patches[i]
+      let patchEnabled = Object.values(config.patches)[i]
 
       if(!patchEnabled) continue
 
