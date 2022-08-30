@@ -20,7 +20,6 @@ export default async function patch(dir: string, config: PatchConfig) {
   const apktoolYml = path.join(dir, 'apktool.yml')
   const manifest = path.join(dir, 'AndroidManifest.xml')
   const adaptiveIconDir = path.join(res, 'mipmap-anydpi-v26')
-  const materialYouPatch = path.join('assets', 'material-you-patch')
 
   if(config.removeTranslations) {
     log('Removing translations...')
@@ -28,6 +27,17 @@ export default async function patch(dir: string, config: PatchConfig) {
     ;(await getDirectories(res))
                 .filter(dir => TRANSLATIONS_REGEX.test(dir))
                 .forEach(dir => rmSync(path.join(res, dir), { force: true, recursive: true }))
+  }
+
+  // Enabled Predictive Back
+  if(config.usePredictiveBack === true) {
+    log('Enabling predictive back...')
+
+    let manifestFile = await readFile(manifest, { encoding: 'utf-8' })
+
+    manifestFile = manifestFile.replace('<application ', '<application android:enableOnBackInvokedCallback="true" ')
+
+    await writeFile(manifest, manifestFile)
   }
 
   // Modify package name

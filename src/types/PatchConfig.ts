@@ -11,7 +11,7 @@ export interface PatchConfig {
     monochrome?:        string;
   };
   packageName?:         string;
-  materialYou?:         boolean;
+  usePredictiveBack?:   boolean;
   removeTranslations?:  boolean;
   keystore?:            {
     path:               string;

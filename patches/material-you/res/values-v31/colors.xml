@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="twitter_blue">@android:color/system_accent1_600</color>
-    <color name="twitter_blue_fill_pressed">@android:color/system_accent1_400</color>
-    <color name="twitter_blue_opacity_30">@android:color/system_accent1_200</color>
-    <color name="twitter_blue_opacity_50">@android:color/system_accent1_400</color>
-    <color name="twitter_blue_opacity_58">@android:color/system_accent1_500</color>
+    <color name="twitter_blue">@android:color/system_accent1_400</color>
+    <color name="twitter_blue_fill_pressed">@android:color/system_accent1_300</color>
+    <color name="twitter_blue_opacity_30">@android:color/system_accent1_100</color>
+    <color name="twitter_blue_opacity_50">@android:color/system_accent1_200</color>
+    <color name="twitter_blue_opacity_58">@android:color/system_accent1_300</color>
 
     <color name="deep_transparent_twitter_blue">@android:color/system_accent1_200</color>
     <color name="ps__twitter_blue">@color/twitter_blue</color>
     <color name="ps__twitter_blue_pressed">@color/twitter_blue_fill_pressed</color>
 
+    <!-- Keep default Twitter blue color because dynamic color wouldn't update -->
     <color name="ic_launcher_background">#1DA1F2</color>
 </resources>
