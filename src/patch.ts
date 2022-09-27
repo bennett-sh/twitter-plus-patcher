@@ -52,7 +52,7 @@ export default async function patch(dir: string, config: PatchConfig) {
 
   // Modify version
   if(config.appVersion != null) {
-    log('Modifying versopms...')
+    log('Modifying versions...')
 
     let apktoolConf = (await readFile(apktoolYml, { encoding: 'utf-8' }))
 
