@@ -15,7 +15,7 @@
 
 ## Installation
 1. Clone this repo
-2. Run ```npm i&tsc```
+2. Run ```npm install```
 
 ## Usage
 1. Configure the patch in config.json
